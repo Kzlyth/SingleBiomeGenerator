@@ -1,0 +1,21 @@
+name: TKIWorldGen
+version: '1.0'
+main: me.kzlyth.tKIWorldGen.TKIWorldGen
+api-version: '1.21'
+load: STARTUP
+authors: [ Kzlyth ]
+commands:
+  createworld:
+    description: Creates a new world with a single biome
+    usage: /createworld <worldname> <biome>
+    permission: tkiworldgen.createworld
+  tkiworldgenreload:
+    description: Reloads the TKIWorldGen configuration
+    usage: /tkiworldgenreload
+    permission: tkiworldgen.reload
+    aliases: [tkiwreload, wreload]
+  tpworld:
+    description: Teleports to an existing world
+    usage: /tpworld <worldname>
+    permission: tkiworldgen.teleport
+    aliases: [ worldtp ]

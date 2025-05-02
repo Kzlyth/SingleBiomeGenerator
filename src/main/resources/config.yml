@@ -1,0 +1,9 @@
+# TKI World Gen
+# v1.0
+# Generates Worlds with a Single Biome
+
+Debug: true # Debug Logging in Console?
+
+Settings:
+  Structures: true     # Strukturen wie Dörfer, Tempel, etc.
+  Villages: true      # Speziell Dörfer generieren (benötigt Structures: true)
