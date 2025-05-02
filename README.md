@@ -24,13 +24,13 @@ A Simple Paper Plugin that generates a Single Biome World
 - Haha, good question! FUCK NO!
 
 **Can I fork it/use it in my Code or Steal it?**
-- Yeah you can, I dont care. You can give credits to me or our [Discord](https://discord.gg/ca5FSvZCKx) (optional)
+- Yeah you can, I dont care. You can give credits to me or our [Discord](https://discord.gg/w3bFWZNcMx) (optional)
 
 **Will you update the Plugin?**
 - uhm... NO! I fucking hate the Code I wrote here and I hate working with world generation. I dont even fucking know if the Code makes sense. (I will only update if its requested by many people)
 
 **How can I get support?**
-- You can ask our [Community](https://discord.gg/ca5FSvZCKx) for supprt. DO NOT open a Ticket, ask in the Community Support Channel
+- You can ask our [Community](https://discord.gg/w3bFWZNcMx) for supprt. DO NOT open a Ticket, ask in the Community Support Channel
 
 **Do you love yourself?**
 - No, I do not 😃
