@@ -41,18 +41,12 @@ public class CreateWorldCommand implements CommandExecutor, TabCompleter {
     }
 
     private void addAllBiomes() {
-        biomeNames.add("plains");
         biomeNames.add("desert");
         biomeNames.add("forest");
         biomeNames.add("taiga");
-        biomeNames.add("swamp");
-        biomeNames.add("snowy_plains");
         biomeNames.add("jungle");
-        biomeNames.add("savanna");
         biomeNames.add("badlands");
         biomeNames.add("mushroom_fields");
-        biomeNames.add("dripstone_caves");
-        biomeNames.add("lush_caves");
     }
 
     @Override
@@ -80,11 +74,9 @@ public class CreateWorldCommand implements CommandExecutor, TabCompleter {
         if (plugin.getConfigManager().getConfig().getBoolean("Debug", false)) {
             plugin.getLogger().info("Creating World: " + worldName);
             plugin.getLogger().info("Biome: " + biome.toString());
-            plugin.getLogger().info("Structures:: " + generateStructures);
-            plugin.getLogger().info("Dörfer: " + generateVillages);
         }
 
-        sender.sendMessage("§aErstelle Welt '" + worldName + "' mit Biom " + biome.toString() + "...");
+        sender.sendMessage("§aCreating World '" + worldName + "' with Biome " + biome.toString() + "...");
 
         final String finalWorldName = worldName;
         final Biome finalBiome = biome;
@@ -105,7 +97,7 @@ public class CreateWorldCommand implements CommandExecutor, TabCompleter {
                     sender.sendMessage("§aYou got teleported to the new World!");
                 }
             } else {
-                sender.sendMessage("§cError while creating'" + finalWorldName + "'!");
+                sender.sendMessage("§cError while creating '" + finalWorldName + "'!");
             }
         });
 
@@ -114,18 +106,12 @@ public class CreateWorldCommand implements CommandExecutor, TabCompleter {
 
     private Biome getBiomeFromString(String biomeName) {
         switch (biomeName) {
-            case "plains": return Biome.PLAINS;
             case "desert": return Biome.DESERT;
             case "forest": return Biome.FOREST;
             case "taiga": return Biome.TAIGA;
-            case "swamp": return Biome.SWAMP;
-            case "snowy_plains": return Biome.SNOWY_PLAINS;
             case "jungle": return Biome.JUNGLE;
-            case "savanna": return Biome.SAVANNA;
             case "badlands": return Biome.BADLANDS;
             case "mushroom_fields": return Biome.MUSHROOM_FIELDS;
-            case "dripstone_caves": return Biome.DRIPSTONE_CAVES;
-            case "lush_caves": return Biome.LUSH_CAVES;
             default: return null;
         }
     }
